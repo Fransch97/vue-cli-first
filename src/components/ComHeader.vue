@@ -1,14 +1,16 @@
 <template>
         <header>
-            Salve sono Vue cli 
+            {{msg}} 
         </header>
 </template>
   
 
 <script>
 export default {
-    name : 'ComHeader'
-
+    name : 'ComHeader',
+    props:{
+    msg : String
+  }
 }
 </script>
 

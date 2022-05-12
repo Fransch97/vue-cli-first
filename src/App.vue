@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <ComHeader />
+    <ComHeader msg="Ciao il sono il header" />
   </div>
 </template>
 
@@ -13,6 +13,7 @@ export default {
   components: {
     ComHeader
   }
+  
 }
 </script>
 
