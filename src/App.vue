@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <ComHeader msg="Ciao il sono il header" />
-    <MyHero msg="Jumbotron"/>
+    <ComHeader msg="Zoidbergs Stroy's " />
+    <MyHero left="ogni Ven" right="alle 15:30" />
   </div>
 </template>
 

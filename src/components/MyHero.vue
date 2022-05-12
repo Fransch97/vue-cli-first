@@ -1,7 +1,8 @@
 <template>
   <div class="jambo">
     <div class="overlay">
-      <h1 id="jumbi">{{msg}}</h1>
+      <h1 id="left">{{left}}</h1>
+      <h1 id="right">{{right}}</h1>
     </div>
   </div>
 </template>
@@ -10,7 +11,8 @@
 export default {
     name: "MyHero",
     props:{
-      msg: String
+      left: String,
+      right: String
     }
 }
 </script>
@@ -39,16 +41,24 @@ export default {
     background: rgba(0, 0, 0, 0.218);
     width: 100%;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
   }
   .overlay h1{
     color: white;
     text-transform: uppercase;
     font-weight: bold;
-    display: inline-block;
-    position: absolute;
+    width: 100%;
     font-size: 5vw;
+    color: rgb(255, 225, 0);
+    position: absolute;
+    text-shadow: 0px 20px 10px black;
+  }
+  #left{
+    top: 30%;
+    left: 30%;
+  }
+  #right{
+    bottom: 30%;
+    left: 40%;
   }
 </style>
