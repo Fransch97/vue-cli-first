@@ -1,15 +1,24 @@
 <template>
   <div id="app">
-    
+    <ComHeader />
   </div>
 </template>
 
-<script>
 
+
+
+<script>
+import ComHeader from '@/components/ComHeader.vue'
 export default {
- 
+  components: {
+    ComHeader
+  }
 }
 </script>
+
+
+
+
 
 <style lang="scss">
 #app {
